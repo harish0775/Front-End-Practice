@@ -1,0 +1,129 @@
+
+
+body{
+    background-color: rgb(226, 198, 198);
+   
+    padding: 15px;
+    border: 2px solid ghostwhite;
+    border-radius: 10px;
+    margin: 10px;;
+}
+
+
+.header-container h1{
+    margin: 0px;
+    background-color: rgb(150, 210, 245);
+    padding : 5px;
+   
+    text-align: center;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+.footer-container h1{
+    margin: 0px;
+    background-color: rgb(173, 231, 241);
+    padding : 5px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    text-align: center;
+    
+}
+
+.main-container{
+    
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+.section{
+    height: auto;
+    margin:0px 0px;
+    width: 100%;
+    background-color: rgb(43, 142, 228);
+    
+    justify-content: space-around;
+    display: flex;
+    
+    
+}
+.form-container{
+      display: flex; 
+      width: 100%;
+      margin: 10px 190px;
+      height: 100%;
+      /* border : 2px solid black; */
+      border-radius: 5px;
+      overflow: hidden;
+}
+img {
+    width: 300px;
+    height: 100%;
+     object-fit: cover;
+    background-color: blanchedalmond;
+    
+}
+
+.form {
+     display: inline-flex;
+     padding : 50px;
+     background-color: rgb(139, 219, 219);
+     height : 83%;
+     width : 50%;
+     text-align: center;
+     align-content: center; 
+}
+label{
+  float: left;
+  width: 25%;
+  margin-top: 6px
+}
+
+input[type =text]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(26, 23, 23);
+    border-radius: 4px;
+    resize: vertical;
+    float: left;
+    
+}
+
+input[type =email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type = tel]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type = date]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(238, 233, 233);
+    border-radius: 4px;
+    resize: vertical;
+}
+#gender{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(250, 246, 246);
+    border-radius: 4px;
+    resize: vertical;
+}
+button{
+    background-color: rgb(250, 195, 93);
+    padding: 15px;
+    margin:20px;
+    border-radius: 5px;
+    width: 80px;
+    border: 2px solid rgb(235, 186, 95);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: solid;
+}
