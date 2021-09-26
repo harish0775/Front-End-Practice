@@ -2803,4 +2803,4 @@ let currDate = new Date();
 // // to get the response 
 // request.addEventListener("load", () => {
 //     console.log(this.responseText);
-// });
+// });  
