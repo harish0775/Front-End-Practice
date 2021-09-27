@@ -894,18 +894,34 @@
 
 // 7️⃣Spread Operator
 
-// const colors = ['red', 'green', 'blue', 'white', 'pink'];
+// const colors = ['34', '23', '231', '432', '23' ,"123"];
 
-// const myColors = ['red', 'green', 'blue', 'white','pink', 'yellow', 'black'];
+// const myColors = ['667', '67', '45', '34','23', '12', '6'];
 // // // 2nd time add one more color on top and tell we need to write it again 
 // // // on myColor array too 
 
-// const MyFavColors = [ ...colors, 'yellow', 'black'];
+// const  feature = ["35","42"]
 
-// console.log(MyFavColors);
+// const MyFavColors = [ ...colors, '31', '12',...feature];
+
+// const fb =  MyFavColors;
 
 
-// ES7 features 
+// console.log(MyFavColors.map((iteam)=>{
+       
+//     if(iteam > 2){
+//       return iteam;
+//     }
+//     return "not Found"
+       
+    // const shortName = {name :"ab", class :"cd",age :12,Room :"ef"};
+
+    //   const Netflix = Object.entries(shortName);
+    // console.log(Netflix);
+    //  console.log(Object.fromEntries(Netflix));
+      
+       
+// }))
 
 // 1: array include 
 // const colors = ['red', 'green', 'blue', 'white', 'pink'];
@@ -1867,7 +1883,7 @@
 // new Date() 🙋‍♂️
 // Date objects are created with the new Date() constructor.
 
-let currDate = new Date(); 
+// let currDate = new Date(); 
 // console.log(currDate);
 
 // console.log(new Date());
@@ -2346,8 +2362,6 @@ let currDate = new Date();
 
 // 4️⃣ clearInterval()
 
-
-
 // **********************************************************************
 
 // 👉 object oriented Javascript
@@ -2522,11 +2536,11 @@ let currDate = new Date();
 // const add = (a,b) => {
 //     return a+b;
 // }
-// // console.log(add(5,2));
+// console.log(add(5,2));
 
-// const subs = (a,b) => {
-//     return Math.abs(a-b);
-// }
+const subs = (a,b) => {
+    return Math.abs(a-b);
+}
 // const mult = (a,b) => {
 //     return a*b;
 // }
@@ -2537,7 +2551,7 @@ let currDate = new Date();
 
 // calculator(5,2,subs)
 
-// console.log(calculator(5,2,subs));
+// console.log(subs(4,6));
 
 // // // I have to do the hardcoded for each operation which is bad
 // // // we will use the callback and the HOF to make it simple to use 
@@ -2585,7 +2599,7 @@ let currDate = new Date();
 // fun1();
 
 
-// Asynchronous JavaScript Prog 
+//Asynchronous JavaScript Prog 
 
 // const fun2 = () => {
 //   setTimeout(()=> {
@@ -2805,3 +2819,19 @@ let currDate = new Date();
 //     console.log(this.responseText);
 // });  
  
+
+ const container = documetn.querySelector("#container");
+
+
+ const request = new XMLHttpRequest();
+ request.open('GET',"https");//get Url in This Http
+ request.send();  //i Request Send please Send Data
+
+
+
+//Send Request send Get Respone.
+ request.addEventListener('load',function(){
+
+   // this.reposnseText -> this respone pure json data.
+   const[data] = JSON.parse(this.responseText);  //convert thee  data in JavaScript Objects
+ })
